@@ -1,5 +1,5 @@
 // API Base URL - Change if your backend is running on different port
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = 'https://ai-resume-analyzer-backend-dl-nlp.onrender.com';
 
 // Global variable to store current analysis results
 let currentAnalysis = null;
@@ -580,4 +580,5 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
 });
