@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-robot"></i>
+                AI Resume Analyzer
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="dashboard.html" class="nav-link">Analyze Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>AI-Powered Resume Analysis</h1>
+            <p>Get instant feedback on your resume, skill analysis, and job recommendations using advanced NLP and Deep Learning</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="location.href='dashboard.html'">
+                    Analyze Your Resume
+                </button>
+                <button class="btn-secondary" onclick="showDemo()">
+                    See Demo
+                </button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-file-alt"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>How It Works</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-upload"></i>
+                <h3>Upload Resume</h3>
+                <p>Upload your PDF or DOCX resume for analysis</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-brain"></i>
+                <h3>AI Analysis</h3>
+                <p>NLP extracts skills and Deep Learning matches with jobs</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Get Insights</h3>
+                <p>Receive detailed analysis and improvement suggestions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo-section" class="demo-section" style="display: none;">
+        <h2>Live Demo</h2>
+        <div class="demo-container">
+            <div class="demo-result">
+                <h3>Sample Analysis Result</h3>
+                <div class="result-card">
+                    <h4>Skills Found:</h4>
+                    <p>Python, Machine Learning, SQL, Data Analysis</p>
+                    
+                    <h4>Top Job Matches:</h4>
+                    <ul>
+                        <li>Data Scientist - 85% match</li>
+                        <li>Software Developer - 78% match</li>
+                        <li>ML Engineer - 92% match</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
